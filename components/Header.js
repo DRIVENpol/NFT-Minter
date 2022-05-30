@@ -33,7 +33,7 @@ export default function Home({}) {
   const [signedMessage, setSignedMessage] = useState("");
   const [verified, setVerified] = useState();
 
-  const contractAddress = "0xeC27dC89c7214522466662A91085b51DBd218FC9";
+  const contractAddress = "0x2e90B77078516795926cc042E1ea4696543C27D8";
   const owner = "0x4E8892C244CF98b3e59b709b4c81553ef8FeF5cF"
   const abi = contractAbi.abi;
 
