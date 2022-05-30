@@ -34,14 +34,13 @@ export default function Home({}) {
   const [verified, setVerified] = useState();
 
   const contractAddress = "0xeC27dC89c7214522466662A91085b51DBd218FC9";
+  const owner = "0x4E8892C244CF98b3e59b709b4c81553ef8FeF5cF"
   const abi = contractAbi.abi;
 
   const [mintedNft, setMintedNft] = useState("");
   const [toMintNft, setToMintNft] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
-
   const [transaction, setTransaction] = useState("");
-
+  const [isLoading, setIsLoading] = useState(false);
   const [isNotif, setIsNotif] = useState(false);
 
   const pull_data = data => {
@@ -313,10 +312,10 @@ export default function Home({}) {
 
 </Flex>
 
-<Content accounts={account} connectFunction={connectWallet} />
+<Content accounts={account} connectFunction={connectWallet} ow={owner} />
+
 <MintSection accounts={account} connectFunction={connectWallet} minted={mintedNft} func={pull_data} mintF={mintNft} 
-    ld={isLoading} in={isNotif} t={transaction}
-/>
+    ld={isLoading} in={isNotif} t={transaction} ow={owner} />
 <Footer />
 
    </>
