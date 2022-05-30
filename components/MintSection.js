@@ -56,7 +56,7 @@ useEffect(() => {
                 color='white'>
                  {props.minted} NFTs were minted<br />
             </Heading>
-<NumberInput step={1} defaultValue={1} min={0}
+<NumberInput step={1} defaultValue={0} min={0}
             focusBorderColor = "white"
            textColor={'white'} size='lg' maxWidth={'50%'}
            onChange={(value) => setToMint(value)}>
