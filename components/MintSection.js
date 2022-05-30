@@ -108,7 +108,7 @@ const MintSection = (props) => {
           <ModalBody>
           <br />
            <Text>Using this panel you will be able to manage your smart contract! If you need support,
-           don't hesitate to DM me <Link hre='https://twitter.com/polthedev' isExternal><b>on Twitter!</b></Link></Text>
+           don&apos;t hesitate to DM me <Link hre='https://twitter.com/polthedev' isExternal><b>on Twitter!</b></Link></Text>
 
           <Grid templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(1, 1fr)','repeat(2, 1fr)','repeat(2, 1fr)',]} gap={6} mt='-15px'>
               <GridItem w='100%'>
